@@ -1,4 +1,12 @@
-name: Hank Quinlan, Horrible Cop
+name: Richard
+surname: Galeštok
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+email: "richardgalestok@gmail.com"  
+github: "https://github.com/richardgalestok"
+facebook: "https://www.facebook.com/riso.gali"
+popis: "Personálna webstránka z predmetu Webové publikovanie"
+url: "http://127.0.0.1:4000"
+plugins:
+  - jekyll-sitemap
 

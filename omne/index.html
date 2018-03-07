@@ -1,0 +1,164 @@
+---
+layout: default
+title: O mne
+---
+<div class="blurb">
+	<h1>{{ page.title }}</h1>
+	
+
+<p>Volám sa Richard Galeštok a študujem na Fakulte Informatiky a Informačných technológií Slovenskej Technickej Univerzity v Bratislave. Študujem na bakalárskom stupni tretí ročník.</p>
+
+<table style="width:100%">
+<tr>
+<th style="width:20%">
+Fotografia:
+</th>
+<th style="width:20%">
+Názov:
+</th>
+<th style="width:60%">
+Obsah:
+</th>
+</tr>
+
+<tr>
+
+<td rowspan="6"><img src="/images/me.png" alt="Portret" width="250" height="250"></td>
+
+<td>
+<strong>Meno</strong>
+</td>
+<td>
+Richard
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Priezvisko</strong>
+</td>
+<td>
+Galeštok
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Vek</strong>
+</td>
+<td>
+22
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Stredná škola</strong>
+</td>
+<td>
+Gymnázium J.A. Raymana, Prešov
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Študuje</strong>
+</td>
+<td>
+Fakulta Informatiky a Informačných Technológií, STU, Bratislava
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Záľuby</strong>
+</td>
+<td>
+Šport, Hudba, Klavír, Práca na PC
+</td>
+</tr>
+</table>   
+
+<table style="width:100%">
+<tr>
+<th style="width:30%">
+Názov:
+</th>
+<th style="width:70%">
+Obsah:
+</th>
+</tr>
+
+<tr>
+
+<td>
+<strong>Java</strong>
+</td>
+<td>
+Začiatočník
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>C</strong>
+</td>
+<td>
+Začiatočník
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>C++</strong>
+</td>
+<td>
+Začiatočník
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>PHP</strong>
+</td>
+<td>
+Začiatočník
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>HTML/CSS</strong>
+</td>
+<td>
+Začiatočník
+</td>
+</tr>
+
+
+</table> 
+
+<table style="width:100%"> 
+<tr>
+<th>
+<strong>Predmet</strong>
+</th>
+<th>
+Akcia
+</th>
+</tr>
+{% for pred in site.data.predmety %}
+      <tr>
+    <td>
+          {{ pred.meno }}
+     </td>
+         <td>
+        <a href="{{ pred.stranka }}">
+          Čítaj viac
+        </a>
+     </td>
+</tr>
+    {% endfor %}
+   </table> 
+
+  </div>
