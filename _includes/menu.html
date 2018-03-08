@@ -1,0 +1,33 @@
+        <div id="menubar">
+        <ul id="menu">
+        {% if page.path == "index.html" %}
+          <li class="selected"><a href="/index.html">Úvod</a></li>
+          {% else %}
+          <li><a href="/index.html">Úvod</a></li>
+          {% endif %}
+          
+           {% if page.url contains 'blog/' %}
+          <li class="selected"><a href="/blog">Blog</a></li>
+          {% else %}
+          <li><a href="/blog">Blog</a></li>
+          {% endif %}
+          
+             {% if page.path == "omne/index.html" %}
+          <li class="selected"><a href="/omne">O mne</a></li>
+          {% else %}
+          <li><a href="/omne">O mne</a></li>
+          {% endif %}
+          
+             {% if page.path == "wp/index.html" %}
+          <li class="selected"><a href="/wp">Webové Publikovanie</a></li>
+          {% else %}
+          <li><a href="/wp">Webové Publikovanie</a></li>
+          {% endif %}
+          
+                  {% if page.path == "kontakt/index.html" %}
+          <li class="selected"><a href="/kontakt">Kontakt</a></li>
+          {% else %}
+          <li><a href="/kontakt">Kontakt</a></li>
+          {% endif %}
+        </ul>
+      </div>

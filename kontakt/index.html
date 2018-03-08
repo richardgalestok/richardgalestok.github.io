@@ -6,7 +6,7 @@ title: Kontakt
 	<h1>{{ page.title }}</h1>
 	
 
-<p>Prostredníctvom tohto formulára ma môžete kontaktovať.</p>
+<p>Prostredníctvom tohto formulára ma môžete kontaktovať na <strong>{{site.email}}</strong>.</p>
 
 <form class="wj-contact" action="https://formspree.io/{{site.email}}" method="POST">
     <input type="text" name="email" placeholder="Email Address">
@@ -15,7 +15,7 @@ title: Kontakt
     <input type="hidden" name="_subject" value="New Contact Form Submission">
     <input type="text" name="_gotcha" style="display:none">
     <input type="submit" value="Submit"> 
-</form>                                  {{site.email}}
+</form>                                  
 
 <style>
 form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
