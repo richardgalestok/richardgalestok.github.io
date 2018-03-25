@@ -1,0 +1,65 @@
+---
+layout: default
+title: Webové Publikovanie - Zadanie 2
+---
+<div class="blurb">
+<a href="/wp">Späť na zoznam zadaní</a>
+	<h1>{{ page.title }}</h1>
+	
+
+<p>Cieľom zadania 2 bolo spracovať vybraný dokument z pôvodného formátu do formátu DocBook a vygenerovať cieľový tvar do formátu PDF. Rozhodol som sa spracovať
+časť svojej prvej odovzdávanej bakalárskej práce.</p>
+
+
+<h2>Požadované a kontrolné konštrukcie</h2>
+   <h3>Členenie textu </h3>
+    <p>
+      Text je členený štandardným spôsobom na kapitoly, sekcie a ich subsekcie. Na základe toho je vygenerovaný obsah na úvodných stranách dokumentu.
+    </p>
+    
+     <h3>Zvýraznenie slov a členenia textu </h3>
+    <p>
+      Text je zvýrazňovaný za pomoci konštrukcie <strong>&lt;emphasis role="bold"&gt;&lt;/emphasis&gt;</strong> a pri texte, ktorý si vyžaduje špeciálne členenie som použil konštrukciu
+      &lt;itemizedlist&gt; a v nej príslušný zoznam itemov.
+    </p>
+    
+        <h3>Odkazy </h3>
+    <p>
+      V rámci textu sú referencované tabuľky pomocou <strong>&lt;link linkend="ex.matica"&gt;</strong>  a taktiež som použil odkaz na URL adresu tagom <strong>&lt;ulink&gt;</strong> 
+    </p>
+    
+          <h3>Poznámka pod čiarou </h3>
+    <p>
+      Tag <strong>&lt;footnote&gt;</strong> a v ňom príslušný obsah zabezpečuje v dokumente zobrazenie poznámky pod čiarou. 
+    </p>
+    
+         <h3>Zoznam použitej literatúry </h3>
+    <p>
+     Na poslednej strane dokumentu sa nachádza zoznam použitej literatúry. Na každý vypísaný zdroj sa odkazuje na príslušnom mieste v dokumente. 
+    </p>
+    
+    <h3>Obrázky a tabuľky </h3>
+    <p>
+     Každý obrázok a tabuľka má svoje pomenovanie. V súbore thesis.xsl som pridal pod riadkom <strong> &lt;xsl:param name="generate.toc"&gt;</strong> parametre table a figure, vďaka čomu
+     dokument v úvode stránky generuje zoznamy zobrazených tabuliek a obrázkov. 
+    </p>
+    
+     <h3>Register pojmov </h3>
+    <p>
+     V texte sú zadefinované všetky pojmy, ktoré sú vložené do tagu &lt;indexterm&gt;. Používal som predovšetkým parameter primary a vo vybraných prípadoch aj vlastnosť secondary.
+      V závere dokumentu sa nachádza zoznam zozbieraných pojmov.
+    </p>
+      
+      
+     <h3>Ďalšie informácie</h3>
+    <p>
+     Na celkové spracovanie dokumentu som použil odporúčanú šablónu stiahnutú zo stránky predmetu. Vykonal som v nej niekoľko úprav. V prvom rade bol zmenený jazyk zobrazovania z češtiny na slovenčinu.
+    Ďalšou zo zmien bolo vymazanie generovania indexovania kapitol (Kapitola 1, Kapitola 2...) v súbore thesis.xsl zakomentovaním riadkov 295-302. Upravil som aj niekoľko posunov textu (margin).
+    </p>
+    
+     <h3>Záver</h3>
+    <p>
+     Snažil som sa plne využiť dostupné možnosti formátu DocBook ako generovanie zoznamov obrázkov, tabuliek, obsahu, referencie na rôzne časti dokumentu či odkazy na internete. Taktiež
+     citovať literatúru za pomoci DocBook konštrukcií.</p>
+    
+  </div>
